@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Months } from './months/Months';
 
+type TypeData = {
+    id: number
+}
+
 export const Main = () => {
 
+   
     return (
         <StyledMain>
-            <h1>Calendsr for <span>2024</span> year</h1>
+            <h1>Calendar for <span>2024</span> year</h1>
             <Months/>
         </StyledMain>
     )
